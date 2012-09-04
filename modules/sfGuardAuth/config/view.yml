@@ -1,0 +1,5 @@
+signinSuccess:
+  layout: layout_logout
+
+secureSuccess:
+  layout: layout_logout
