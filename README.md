@@ -1,0 +1,4 @@
+sfDoctrineGuardPlugin
+=====================
+
+User Management
