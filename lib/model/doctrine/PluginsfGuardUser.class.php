@@ -15,6 +15,10 @@ abstract class PluginsfGuardUser extends BasesfGuardUser
     $_permissions    = null,
     $_allPermissions = null;
 
+  public function getObjectClass(){
+    return 'sfGuardUser';
+  }
+  
   /**
    * Returns the string representation of the object: "Full Name (username)"
    *
