@@ -10,4 +10,18 @@
  */
 abstract class PluginsfGuardUserFormFilter extends BasesfGuardUserFormFilter
 {
+	public function configure(){
+		$this->widgetSchema['created_at']->setOption(
+		  'from_date', new sfWidgetFormInputDate()
+		);
+		$this->widgetSchema['created_at']->setOption(
+		  'to_date', new sfWidgetFormInputDate()
+		);
+		$this->widgetSchema['last_login']->setOption(
+		  'from_date', new sfWidgetFormInputDate()
+		);
+		$this->widgetSchema['last_login']->setOption(
+		  'to_date', new sfWidgetFormInputDate()
+		);
+	}
 }
